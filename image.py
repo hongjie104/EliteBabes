@@ -24,7 +24,7 @@ def downloadImg(url, imgPath):
 	if os.path.exists(imgPath):
 		printColor.printDarkWhite(u"跳过已存在图片:%s" % imgPath)
 	else:
-		printColor.printBlue(u"开始下载图片:%s" % url)
+		printColor.printPink(u"开始下载图片:%s" % url)
 		try:
 			r = requests.get(url, stream = True)
 		except Exception, e:
